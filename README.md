@@ -36,6 +36,7 @@ unzip pnstream-server.zip
 pnstream-server\bin\pnstream-server.bat
 ```
 ### download page
+https://github.com/neuronmocap/pns-server/releases/tag/v0.1.0
 
 ## Deploy pnstream-server app
 A VPS is ready and requirements are as below

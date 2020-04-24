@@ -28,13 +28,8 @@ pnstream-server app can be built from source code or just download from release 
 ```
 gradlew.bat distZip
 ```
+2. target file is: build\distributions\pnstream-server.zip
 
-2. unzip pnstream-server.zip and run
-```
-cd build\distributions
-unzip pnstream-server.zip
-pnstream-server\bin\pnstream-server.bat
-```
 ### download page
 https://github.com/neuronmocap/pns-server/releases/tag/v0.1.0
 

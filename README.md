@@ -9,11 +9,12 @@ There are two locations: location1 and location2.
 Since location1 and location2 can't be connected directly, a server is needed to transfer the stream data between them. Both location1 and location2 need to connect to the server to upload and download data.
 
 Below diagram shows the architecture and data flowing:
+
 ![image](https://note.youdao.com/yws/public/resource/0a2bb717f8a72a1ac060ee25d5f33347/xmlnote/E728654FF58E4B87B479AB85877DD0C5/84250)
 
- As the diagraming show, the mocap data can be broadcasted to more than one locations.
+As the diagraming show, the mocap data can be broadcasted to more than one locations.
  
- The two components marked with yellow background in the diagram are the new added applications to stream the mocap data.
+The two components marked with yellow background in the diagram are the new added applications to stream the mocap data.
  1. Server: An application running in the cloud transfer the data from upclient(location1) to downclient(location2). Its IP address is knowed by apps running at location1 and location2.
  2. Upload App：A java application running at upclient side(location1). It has two functionalities:
     - Get the BVH data from Axis app via TCP protocol locally
@@ -72,7 +73,7 @@ a TCP down client joined:[id: 0xb92e11d4, L:/147.8.101.137:10000 - R:/193.221.23
 ```
 pnstream-server is listenning at two ports: 10000 and 9998. The later is for upclient app to connect while the former is for plugin to connect.
 
-### know issue
+### known issue
 When up client terminated the connection, an exception as following will be printed. It doesn't matter. It can be ignored.
 ```
 java.io.IOException: Connection reset by peer
